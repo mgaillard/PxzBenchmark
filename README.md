@@ -10,5 +10,5 @@ Run the Benchmark
 	touch ~/result.csv
 	docker run --privileged -v ~/result.csv:/root/result.csv -e NUMBER="10" mgaillard/pxz_benchmark
 
-The variable NUMBER is the number of times the benchmark is repeated.
+The variable `NUMBER` is the number of times the benchmark is repeated.  
 You can replace `~/result.csv` with the location of the result file on the host.
