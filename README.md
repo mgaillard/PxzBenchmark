@@ -8,7 +8,8 @@ Generate the Docker image
 Run the Benchmark
 ----------------
 	touch ~/result.csv
-	docker run --privileged -v ~/result.csv:/root/result.csv -e NUMBER="10" mgaillard/pxz_benchmark
+	docker run --privileged -v ~/result.csv:/root/result.csv -e NUMBER="10" -e THREADS="4" mgaillard/pxz_benchmark
 
 The variable `NUMBER` is the number of times the benchmark is repeated.  
-You can replace `~/result.csv` with the location of the result file on the host.
+The variable `THREADS` is the number of CPU threads used for the benchmark.
+You can replace `~/result.csv` with the location of the result file on the host.  
